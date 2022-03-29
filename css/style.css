@@ -163,4 +163,14 @@ footer nav ul li  {
     header img{
         width: 200px;
     }
+
+    .table>:not(caption)>*>*{
+        padding: 0.1rem 0.3rem;
+        font-size: 2vw;
+    }
+
+    main.p-5{
+        padding: 0.5rem !important;
+    }
+    
 }
