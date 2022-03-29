@@ -48,3 +48,111 @@ footer nav ul{
 footer nav ul li  {
     padding: 10px;
 }
+
+.container nav a{
+    text-decoration: none;
+    color: #555;
+    font-size: 3vw;
+}
+
+@media(max-width:900px){
+    .btn-secondary, .btn-dark, .btn-danger {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .nav-link.link-dark, .nav-link.active, body{
+        font-size: 0.8rem;
+    }
+
+    .nav-item{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 785px){
+    .data{
+        display: none;
+    }
+    
+}
+
+@media(max-width: 650px){
+    .btn-secondary,
+    .btn-dark,
+    .btn-danger {
+        width: 100%;
+        font-size: 2vw;
+    }
+
+    .nav-link.link-dark,
+    .nav-link.active,
+    .btn.btn-primary,
+    body {
+        font-size: 2vw;
+    }
+
+    .p-3 {
+         padding: 0 !important;
+    }
+
+}
+
+@media(max-width: 500px){
+    /* .atracoes, */
+    .img-responsive {
+        display: none;
+    }
+
+    .btn-secondary, .btn-dark, .btn-danger{
+        font-size: 2vw;
+        width: 80%;
+        padding-left: 5%;
+    }
+
+    body{
+        font-size: 2.5vw;
+    }
+
+    .p-3{
+        padding: 0 !important;
+    }
+
+    .col-2{
+        width: 18.5%;
+    }
+
+    .form-control{
+        width: 250%;
+    }
+
+    .form-label{
+        font-size: 3vw;
+    }
+
+    button.btn.btn-primary, button.btn.btn-danger{
+        width: 250%;
+        font-size: 3.5vw;
+    }
+
+    .col img{
+        width: 300px;
+    }
+
+    .container a img{
+        display: none;
+    }
+
+    div.container.d-flex {
+        flex-direction: column;
+    }
+
+    .m-3{
+        box-sizing: border-box;
+    }
+
+    a.btn.btn-primary, a.btn.btn-secondary{
+        font-size: 3.5vw;
+    }
+}
