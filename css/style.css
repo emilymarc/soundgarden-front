@@ -52,7 +52,7 @@ footer nav ul li  {
 .container nav a{
     text-decoration: none;
     color: #555;
-    font-size: 3vw;
+    font-size: 1.5vw;
 }
 
 @media(max-width:900px){
@@ -154,5 +154,13 @@ footer nav ul li  {
 
     a.btn.btn-primary, a.btn.btn-secondary{
         font-size: 3.5vw;
+    }
+
+    .container nav a {
+        font-size: 3vw;
+    }
+
+    header img{
+        width: 200px;
     }
 }
