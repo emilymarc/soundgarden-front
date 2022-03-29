@@ -6,7 +6,7 @@ body {font-family: Arial, Helvetica, sans-serif;
 /* modal (background) */
 .modal {
   display: none; /* escondido por padrao */
-  position: fixed; /* posião fia */
+  position: fixed; /* posição fixa */
   z-index: 1; /* ser exibido no topo*/
   padding-top: 100px; /* localização do box */
   left: 0;

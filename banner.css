@@ -1,0 +1,175 @@
+
+
+.box-popup{
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  overflow: hidden;
+  background: none;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+@keyframes titulo-popup {
+      0% {left: -150px;}
+     30% {left:   20px;}
+     40% {left:   20px;}
+     50% {left:   20px;}
+     90% {left:   20px;}
+    100% {left: -150px;}
+}
+
+.titulo-popup{
+  width: 100px;
+  height: 20px;
+  padding: 5px;
+  color: #fff;
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  top: 30px;
+  right: 0;
+  z-index: 1;
+  line-height: 15px;
+
+  animation: titulo-popup 10s ease-out 0s infinite normal;
+  transition-timing-function: ease-in-out;
+}
+
+.sub-titulo-popup{
+  font-size: 15px;
+}
+
+@keyframes black-popup {
+    0% {background: #000;}
+   15% {background: #000;}
+   30% {background: none;}
+   40% {background: none;}
+   80% {background: none;}
+   90% {background: #000;}
+  100% {background: #000;}
+}
+
+.black-popup{
+  background: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+
+  animation: black-popup 10s ease-in 0s normal infinite;
+}
+
+@keyframes texto-black-popup {
+    0% {opacity: 1;}
+   15% {opacity: 1;}
+   20% {opacity: 0;}
+   30% {opacity: 0;}
+   40% {opacity: 0;}
+   80% {opacity: 0;}
+   90% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+.texto-black-popup{
+  color: #fff;
+  opacity: 0;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+
+  max-width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 9;
+  animation: texto-black-popup 10s ease-in 0s normal infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes produto-popup {
+      0% {right: -170px;}
+     35% {right:   10px;}
+     45% {right:   10px;}
+     50% {right:   10px;}
+     90% {right:   10px;}
+    100% {right: -170px;}
+}
+
+.produto-popup{
+  position: absolute;
+  bottom: 5px;
+  animation: produto-popup 10s ease-out 0s infinite normal;
+  width: 60%;
+}
+
+@keyframes logo-growth-popup {
+      0% {right: -170px;}
+     30% {right:   20px;}
+     40% {right:   20px;}
+     50% {right:   20px;}
+     90% {right:   20px;}
+    100% {right: -170px;}
+}
+
+.logo-growth-popup{
+  position: absolute;
+  bottom: 20px;
+  animation: logo-growth-popup 10s ease-out 0s infinite normal;
+}
+
+@keyframes botao-compra-popup {
+      0% {left: -150px;}
+     30% {left:   20px;}
+     40% {left:   20px;}
+     50% {left:   20px;}
+     90% {left:   20px;}
+    100% {left: -150px;}
+}
+
+.botao-compra-growth-popup{
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  animation: botao-compra-popup 10s ease-out 0s infinite normal;
+}
+
+@keyframes texto-preco-popup {
+      0% {left: -150px;}
+     30% {left:   20px;}
+     40% {left:   20px;}
+     50% {left:   20px;}
+     90% {left:   20px;}
+    100% {left: -150px;}
+}
+
+.preco-popup{
+  color: red;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 130px;
+  line-height: 20px;
+
+  animation: texto-preco-popup 10s ease-out 0s infinite normal;
+}
+
+@media only screen and (max-width: 450px){
+  .botao-compra-growth-popup{
+    top: 160px;
+    width: 150px;
+  }
+  .preco-popup{
+    top: 100px;
+  }
+ @keyframes logo-growth-popup {
+      0% {left: -170px;}
+     30% {left:   20px;}
+     40% {left:   20px;}
+     50% {left:   20px;}
+     90% {left:   20px;}
+    100% {left: -170px;}
+}
+}
