@@ -113,36 +113,37 @@
     <!-- conteudo do modal -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <form>
-        <label for="rsvName">Nome</label>
-        <input type="text" ide="rsvName" name="rsvName" placeholder="Nome e Sobrenome">    
-        <label for="rsvEmail">Email</label>
-        <input type="email" id="rsvEmail" name="rsvEmail" placeholder="Seu Email">
-        <br>
-        <br>
-        <form action="">
-          <label for="rsvEvento">Evento</label>
-          <select id="rsvEvento" name="rsvEvento">
-            <option value="hermanos">Los Hermanos</option>
-            <option value="metalica">Metalica</option>
-            <option value="caetano">Caetano Veloso</option>
-          </select>
-          <label for="rsvData">Data</label>
-          <input type="date" id="rsvData" name="rsvData" placeholder="Data">
-          <label for="rsvQuantidade">Quantidade</label>
-          <input type="rsvQuantidade"id="rsvQuantidade"name="rsvQuantidade" placeholder="Quantidade">
-          <br>
-          <input type="radio" id="concordaTermos"
-          name="concorda" value="concordaTermos">
-         <label for="concordaTermos">Ao clicar em reservar você concorda com todos os termos referente ao evento</label>
-          <br>
-          <input type="submit" value="Reservar">
+      <form id="modalForm">
+            <label for="rsvName">Nome</label>
+            <input type="text" id="rsvName" name="rsvName" placeholder="Nome e Sobrenome">    
+            <label for="rsvEmail">Email</label>
+            <input type="email" id="rsvEmail" name="rsvEmail" placeholder="Seu Email">
+            <br>
+            <br>
+            
+            <label for="rsvEvento">Evento</label>
+            <select id="rsvEvento" name="rsvEvento">
+                <option value="hermanos">Los Hermanos</option>
+                <option value="metalica">Metalica</option>
+                <option value="caetano">Caetano Veloso</option>
+            </select>
+            <label for="rsvData">Data</label>
+            <input type="date" id="rsvData" name="rsvData" placeholder="Data">
+            <label for="rsvQuantidade">Quantidade</label>
+            <input type="rsvQuantidade"id="rsvQuantidade"name="rsvQuantidade" placeholder="Quantidade">
+            <br>
+            <input type="radio" id="concordaTermos"
+            name="concorda" value="concordaTermos">
+            <label for="concordaTermos">Ao clicar em reservar você concorda com todos os termos referente ao evento</label>
+            <br>
+            <input type="submit" value="Reservar" id="btnReservar">
         </form>
     </div>
 
   </div>
 
   <script src="script/modal_script.js"></script>
+  <script src="script/api.js"></script>
 
     </footer>
 </body>
