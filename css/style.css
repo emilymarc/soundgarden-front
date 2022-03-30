@@ -101,6 +101,10 @@ footer nav ul li  {
     .row.d-flex{
         flex-direction: column;
     }
+
+    .form-control {
+        width: 200%;
+    }
     
 }
 
@@ -128,6 +132,10 @@ footer nav ul li  {
         margin: 1rem 0 !important;
     }
 
+    .form-control {
+        width: 200%;
+    }
+
 }
 
 @media(max-width: 500px){
@@ -136,10 +144,11 @@ footer nav ul li  {
         display: none;
     }
 
-    .btn-secondary, .btn-dark, .btn-danger{
+    #btn-second, .btn-dark, .btn-danger{
         font-size: 2vw;
         width: 80%;
         padding-left: 5%;
+        text-align: center;
     }
 
     body{
@@ -163,7 +172,7 @@ footer nav ul li  {
     }
 
     button.btn.btn-primary, button.btn.btn-danger{
-        width: 250%;
+        width: 200%;
         font-size: 3.5vw;
     }
 
