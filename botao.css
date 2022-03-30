@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+body{
+    font-family: 'Questrial', sans-serif;
+}
+.btn-conf-reserva{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #C2185B;
+    background-color: #C2185B;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+}
