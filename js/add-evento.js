@@ -1,6 +1,5 @@
 const inputNome = document.querySelector("#nome");
 const inputAtracoes = document.querySelector("#atracoes");
-const atracao = inputAtracoes.value.split(",")
 const inputDescricao = document.querySelector("#descricao");
 const inputData = document.querySelector("#data");
 const inputLotacao = document.querySelector("#lotacao");
@@ -9,6 +8,7 @@ const BASE_URL = 'https://xp41-soundgarden-api.herokuapp.com'
 
 
 const form = document.querySelector("form");
+
 
 const formatMinutes = (numero) => {
     if ( numero < 10 ) {
@@ -21,7 +21,7 @@ const formatMinutes = (numero) => {
 form.onsubmit = async (evento) => {
     evento.preventDefault();
 
-    // const atracao = inputAtracoes.value.split(',');
+    
     // const fullDateTime = convertDateTime(inputData.value);
 
     const newDate = new Date(inputData.value)
@@ -31,7 +31,7 @@ form.onsubmit = async (evento) => {
         const newEvento = {
             name: inputNome.value,
             poster: "link da imagem",
-            attractions: atracao,
+            attractions: inputAtracoes.value.split(","),
             description: inputDescricao.value,
             scheduled: formatScheduled,
             number_tickets: inputLotacao.value
