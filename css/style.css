@@ -48,3 +48,170 @@ footer nav ul{
 footer nav ul li  {
     padding: 10px;
 }
+
+.container nav a{
+    text-decoration: none;
+    color: #555;
+    font-size: 1.5vw;
+}
+
+@media(max-width:900px){
+    .btn-secondary, .btn-dark, .btn-danger {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .nav-link.link-dark, .nav-link.active, body{
+        font-size: 0.8rem;
+    }
+
+    .nav-item{
+        width: 100%;
+    }
+
+    .evento.card {
+        width: 100%;
+    }
+
+    .row.d-flex {
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width: 785px){
+    .data{
+        display: none;
+    }
+
+    .container.d-flex {
+        flex-direction: column;
+    }
+
+    .btn.btn-secondary{
+        width: 50%;
+        padding: 5% 10%;
+        font-size: 1rem;
+    }
+
+    .evento.card{
+        width: 100%;
+    }
+
+    .row.d-flex{
+        flex-direction: column;
+    }
+
+    .form-control {
+        width: 200%;
+    }
+    
+}
+
+@media(max-width: 650px){
+    .btn-secondary,
+    .btn-dark,
+    .btn-danger {
+        width: 100%;
+        font-size: 2vw;
+    }
+
+    .nav-link.link-dark,
+    .nav-link.active,
+    .btn.btn-primary,
+    body {
+        font-size: 2vw;
+    }
+
+    .p-3 {
+         padding: 0 !important;
+    }
+
+    .m-3 {
+        box-sizing: border-box;
+        margin: 1rem 0 !important;
+    }
+
+    .form-control {
+        width: 200%;
+    }
+
+}
+
+@media(max-width: 500px){
+    /* .atracoes, */
+    .img-responsive {
+        display: none;
+    }
+
+    #btn-second, .btn-dark, .btn-danger{
+        font-size: 2vw;
+        width: 80%;
+        padding-left: 5%;
+        text-align: center;
+    }
+
+    body{
+        font-size: 2.5vw;
+    }
+
+    .p-3{
+        padding: 0 !important;
+    }
+
+    .col-2{
+        width: 18.5%;
+    }
+
+    .form-control{
+        width: 200%;
+    }
+
+    .form-label{
+        font-size: 2.5vw;
+    }
+
+    button.btn.btn-primary, button.btn.btn-danger{
+        width: 200%;
+        font-size: 3.5vw;
+    }
+
+    .col img{
+        width: 300px;
+    }
+
+    .container a img{
+        display: none;
+    }
+
+    div.container.d-flex {
+        flex-direction: column;
+    }
+
+    .m-3{
+        box-sizing: border-box;
+        margin: 1rem 0 !important;
+    }
+
+    a.btn.btn-primary, a.btn.btn-secondary{
+        font-size: 3.5vw;
+    }
+
+    .container nav a {
+        font-size: 3vw;
+    }
+
+    header img{
+        width: 200px;
+    }
+
+    .table>:not(caption)>*>*{
+        padding: 0.1rem 0.3rem;
+        font-size: 2vw;
+    }
+
+    main.p-5{
+        padding: 0.5rem !important;
+    }
+    
+}
