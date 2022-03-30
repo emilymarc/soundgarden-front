@@ -16,6 +16,7 @@ body{
   overflow: auto; /* habilitar rolagem de pagina mesmo com o modal aberto*/
   background-color: rgb(0,0,0); /* background opaco quando o modal abre*/
   background-color: rgba(0,0,0,0.4); /* opacidade */
+  z-index: 102;
   
 }
 
@@ -26,8 +27,6 @@ body{
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 /* botão fechar */
@@ -58,4 +57,13 @@ body{
   width: 150px;
   height: 35px;
 }
+
+#modal_form input.campo_modal
+{
+  padding: 5px;
+  background-color: #F8BBD0;
+  border-radius: 5px;
+  border: none;
+}
+
 
