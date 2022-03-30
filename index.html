@@ -117,30 +117,29 @@
 <div id="modal-rsv" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <form>
-        <label for="rsvName">Nome</label>
-        <input type="text" ide="rsvName" name="rsvName" placeholder="Nome e Sobrenome">    
-        <label for="rsvEmail">Email</label>
-        <input type="email" id="rsvEmail" name="rsvEmail" placeholder="Seu Email">
+      <form id="modal_form">
+        <label for="rsvName"><b>Nome</b></label>
+        <input type="text" ide="rsvName" class="campo_modal" placeholder="Nome e Sobrenome" size="40">    
+        <label for="rsvEmail"><b>Email</b></label>
+        <input type="email" id="rsvEmail" class="campo_modal" placeholder="Seu Email" size="30">
         <br>
         <br>
-        <form action="">
-          <label for="rsvEvento">Festival</label>
-          <select id="rsvEvento" name="rsvEvento">
-            <option value="lolla">Lollapalooza</option>
-            <option value="montreal">Montreal Jazz Festival</option>
-            <option value="carnaval">Carnaval da Bahia</option>
+        <form action="" class="campo_modal">
+          <label for="rsvEvento"><b>Festival</b></label>
+          <select id="rsvEvento" class="campo_modal">
+            <option value="lolla" class="campo_modal">Lollapalooza</option>
+            <option value="montreal" class="campo_modal">Montreal Jazz Festival</option>
+            <option value="carnaval" class="campo_modal">Carnaval da Bahia</option>
           </select>
           <!-- <label for="rsvData">Data</label>
           <input type="date" id="rsvData" name="rsvData" placeholder="Data"> -->
-          <label for="rsvQuantidade">Quantidade</label>
-          <input type="rsvQuantidade"id="rsvQuantidade"name="rsvQuantidade" placeholder="Quantidade">
+          <label for="rsvQuantidade"><b>Quantidade</b></label>
+          <input type="rsvQuantidade"id="rsvQuantidade" class="campo_modal" placeholder="Quantidade" size="10">
           <br>
-          <input type="radio" id="concordaTermos"
-          name="concorda" value="concordaTermos">
-         <label for="concordaTermos">Ao clicar em reservar você concorda com todos os termos referente ao evento</label>
+          <input type="radio" id="concordaTermos" class="campo_modal" value="concordaTermos">
+         <label for="concordaTermos"><small>Ao clicar em reservar você concorda com todos os termos referente ao evento</small></label>
           <br>
-          <input type="submit" value="Reservar">
+          <a href="#" class="btn-conf-reserva" id="modal-btn">Confirmar Reserva</a>
         </form>
     </div>
 </div>
