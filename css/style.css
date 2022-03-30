@@ -55,56 +55,6 @@ footer nav ul li  {
     font-size: 1.5vw;
 }
 
-/* .container-slide {
-  width: 30vw;
-  height: 80vh;
-  
-}
-.slideshow {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  z-index: 101;
-}
-.slideshow::after {
-  content: "";
-  position: absolute;
-  z-index: 202;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: none;
-}
-.slide {
-  opacity: 0;
-  display: block;
-  width: 100%;
-  position: absolute;
-  animation: galeria 18s infinite;
-}
-
-.slide:nth-child(2){
-  animation-delay: 6s;
-  -webkit-animation-delay: 6s;
-}
-.slide:nth-child(3){
-  animation-delay: 12s;
-  -webkit-animation-delay: 12s;
-}
-@keyframes galeria {
-  33.33% {
-    opacity: 1;
-  }
-  66.66% {
-    opacity: 0;
-  } */
-
-
-
 @media(max-width:900px){
     .btn-secondary, .btn-dark, .btn-danger {
         width: 100%;
