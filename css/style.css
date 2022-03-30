@@ -55,6 +55,56 @@ footer nav ul li  {
     font-size: 1.5vw;
 }
 
+/* .container-slide {
+  width: 30vw;
+  height: 80vh;
+  
+}
+.slideshow {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 101;
+}
+.slideshow::after {
+  content: "";
+  position: absolute;
+  z-index: 202;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: none;
+}
+.slide {
+  opacity: 0;
+  display: block;
+  width: 100%;
+  position: absolute;
+  animation: galeria 18s infinite;
+}
+
+.slide:nth-child(2){
+  animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+}
+.slide:nth-child(3){
+  animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+}
+@keyframes galeria {
+  33.33% {
+    opacity: 1;
+  }
+  66.66% {
+    opacity: 0;
+  } */
+
+
+
 @media(max-width:900px){
     .btn-secondary, .btn-dark, .btn-danger {
         width: 100%;
@@ -69,11 +119,37 @@ footer nav ul li  {
         width: 100%;
     }
 
+    .evento.card {
+        width: 100%;
+    }
+
+    .row.d-flex {
+        flex-direction: column;
+    }
+
 }
 
 @media(max-width: 785px){
     .data{
         display: none;
+    }
+
+    .container.d-flex {
+        flex-direction: column;
+    }
+
+    .btn.btn-secondary{
+        width: 50%;
+        padding: 5% 10%;
+        font-size: 1rem;
+    }
+
+    .evento.card{
+        width: 100%;
+    }
+
+    .row.d-flex{
+        flex-direction: column;
     }
     
 }
@@ -95,6 +171,11 @@ footer nav ul li  {
 
     .p-3 {
          padding: 0 !important;
+    }
+
+    .m-3 {
+        box-sizing: border-box;
+        margin: 1rem 0 !important;
     }
 
 }
@@ -124,11 +205,11 @@ footer nav ul li  {
     }
 
     .form-control{
-        width: 250%;
+        width: 200%;
     }
 
     .form-label{
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     button.btn.btn-primary, button.btn.btn-danger{
@@ -150,6 +231,7 @@ footer nav ul li  {
 
     .m-3{
         box-sizing: border-box;
+        margin: 1rem 0 !important;
     }
 
     a.btn.btn-primary, a.btn.btn-secondary{
