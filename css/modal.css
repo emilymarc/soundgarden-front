@@ -1,6 +1,6 @@
-
-body {font-family: Arial, Helvetica, sans-serif;
-
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+body{
+    font-family: 'Questrial', sans-serif;
 }
 
 /* modal (background) */
@@ -16,6 +16,8 @@ body {font-family: Arial, Helvetica, sans-serif;
   overflow: auto; /* habilitar rolagem de pagina mesmo com o modal aberto*/
   background-color: rgb(0,0,0); /* background opaco quando o modal abre*/
   background-color: rgba(0,0,0,0.4); /* opacidade */
+  z-index: 102;
+  
 }
 
 /* conteudo do modal */
@@ -41,3 +43,27 @@ body {font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   cursor: pointer;
 }
+
+
+.btn-conf-reserva{
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #C2185B;
+  background-color: #C2185B;
+  border-radius: 5px;
+  width: 150px;
+  height: 35px;
+}
+
+#modal_form input.campo_modal
+{
+  padding: 5px;
+  background-color: #F8BBD0;
+  border-radius: 5px;
+  border: none;
+}
+
+

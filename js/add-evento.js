@@ -24,8 +24,8 @@ form.onsubmit = async (evento) => {
     
     // const fullDateTime = convertDateTime(inputData.value);
 
-    const newDate = new Date(inputData.value)
-    const formatScheduled = `${newDate.getFullYear()}-${formatMinutes(newDate.getMonth())}-${newDate.getDate()}T${formatMinutes(newDate.getHours())}:${formatMinutes(newDate.getMinutes())}`
+    const newDate = new Date(inputData.value);
+    const formatScheduled = `${newDate.getFullYear()}-${formatMinutes(newDate.getMonth())}-${newDate.getDate()}T${formatMinutes(newDate.getHours())}:${formatMinutes(newDate.getMinutes())}`;
    
     try{
         const newEvento = {
@@ -45,8 +45,8 @@ form.onsubmit = async (evento) => {
             }
         }
 
-        const resposta = await fetch(`https://xp41-soundgarden-api.herokuapp.com/events`, options)
-        const conteudoResposta = await resposta.json()
+        const resposta = await fetch(`${BASE_URL}/events`, options);
+        const conteudoResposta = await resposta.json();
         console.log(conteudoResposta);
         
         
