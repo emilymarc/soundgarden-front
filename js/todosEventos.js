@@ -1,4 +1,4 @@
-const BASE_URL = "https://xp41-soundgarden-api.herokuapp.com";
+
 
 const optionEvents = {
     method:"GET",
@@ -10,7 +10,7 @@ const optionEvents = {
 
 const cards = document.querySelector("#card")
 const listarEventos = async () => {
-    const resposta = await fetch (`${BASE_URL}/events`, optionEvents)
+    const resposta = await fetch (`https://xp41-soundgarden-api.herokuapp.com/events`, optionEvents)
     const eventos = await resposta.json();
     const htmlEventos = eventos.map((evento, index) => {
         const dataEvento = new Date(evento.scheduled);
