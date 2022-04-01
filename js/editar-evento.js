@@ -3,7 +3,7 @@ const BASE_URL = 'https://xp41-soundgarden-api.herokuapp.com'
 const form = document.querySelector('form');
 
 function getId(){
-    const url = new URL(window.location.href).searchParams;
+    const url = new URLSearchParams(window.location.search);
     const id = url.get('id');
     return id
 }
